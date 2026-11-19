@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 10</title>
+    <script language="JavaScript">
+
+    function changeState() {
+        var check = document.getElementById("check");
+        var box = document.getElementById("box");
+
+        check.checked = !check.checked;
+
+        if (check.checked) {
+            box.value = "Флажок включён";
+        } else {
+            box.value = "Флажок выключен";
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <h3>Переключение флажка</h3>
+
+    <input type="checkbox" id="check"> Флажок
+    <br>
+    <br>
+    <input type="text" id="box" size="30">
+    <br>
+    <br>
+    <input type="button" value="Изменить состояние" onClick="changeState();">
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Зачётная книжка</title>
+</head>
+
+<body>
+    <h2>Зачётная книжка</h2>
+
+    <form name="zachetka" action="spasibo.html" method="get">
+        ФИО: <input type="text" name="fio" size="40">
+        <br><br>
+
+        <b>1. Дисциплина (выпадающий список):</b>
+        <br>
+        <select name="discipline">
+        <option value="webdesign" selected>Веб-дизайн</option>
+        <option value="composition">Композиция</option>
+        <option value="drawing">Рисунок</option>
+        <option value="history">История искусств</option>
+        <option value="informatics">Информатика</option>
+        </select>
+        <br><br>
+
+        <b>2. Оценка (переключатели - можно выбрать только одну):</b>
+        <br>
+        <input type="radio" name="mark" value="5" checked> Отлично (5)
+        <input type="radio" name="mark" value="4"> Хорошо (4)
+        <input type="radio" name="mark" value="3"> Удовлетворительно (3)
+        <input type="radio" name="mark" value="2"> Неудовлетворительно (2)
+        <br><br>
+
+        <b>3. Сданные зачёты (флажки - можно выбрать несколько):</b>
+        <br>
+        <input type="checkbox" name="credit" value="pe"> Физкультура
+        <input type="checkbox" name="credit" value="english"> Английский язык
+        <input type="checkbox" name="credit" value="philosophy"> Философия
+        <input type="checkbox" name="credit" value="safety"> Безопасность жизнедеятельности
+        <br><br>
+
+        <b>4. Экзамены, сданные на «отлично» (список с множественным выбором):</b>
+        <br>
+        <select name="exams" size="4" multiple>
+        <option value="webdesign">Веб-дизайн</option>
+        <option value="composition">Композиция</option>
+        <option value="drawing">Рисунок</option>
+        <option value="history">История искусств</option>
+        <option value="informatics">Информатика</option>
+        </select>
+        <br><br>
+
+        <input type="submit" value="Отправить">
+        <input type="reset" value="Очистить">
+    </form>
+    <hr>
+    <a href="lichnaya.html">Вернуться на страницу «Личная»</a>
+</body>
+
+</html>

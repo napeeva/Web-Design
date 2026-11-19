@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 7</title>
+</head>
+
+<body>
+    <script language="JavaScript">
+    var host = location.host;
+
+    var adres = location.protocol + "//" + host + "/index.html";
+
+    if (host == "") {
+        adres = "index.html";
+    }
+
+    document.write("<a href='" + adres + "'>Перейти на главную страницу</a><br>");
+    document.write("Адрес ссылки: " + adres);
+    </script>
+</body>
+
+</html>
